@@ -1,0 +1,3049 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.1003.1601                               -->
+<workbook original-version='18.1' source-build='2025.2.4 (20252.25.1003.1601)' source-platform='mac' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <BasicButtonObject />
+    <BasicButtonObjectTextSupport />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='MiniProject4_17639350765490' path='/workbooks' revision='1.4' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='marketing_campaign_cleaned' inline='true' name='federated.03rmiph0j05sqo1grw6kl1spralb' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='marketing_campaign_cleaned' name='textscan.1pn7fqz0yf9wwv18z7bzq19vjg5o'>
+            <connection class='textscan' directory='/Users/codelearner/dibimbing/PythonProject' filename='marketing_campaign_cleaned.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1pn7fqz0yf9wwv18z7bzq19vjg5o' name='marketing_campaign_cleaned.csv' table='[marketing_campaign_cleaned#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_ID'>
+            <column datatype='string' name='Campaign_ID' ordinal='0' />
+            <column datatype='string' name='Company' ordinal='1' />
+            <column datatype='string' name='Campaign_Type' ordinal='2' />
+            <column datatype='string' name='Target_Audience' ordinal='3' />
+            <column datatype='string' name='Duration' ordinal='4' />
+            <column datatype='string' name='Channel_Used' ordinal='5' />
+            <column datatype='string' name='Conversion_Rate' ordinal='6' />
+            <column datatype='string' name='Acquisition_Cost' ordinal='7' />
+            <column datatype='string' name='ROI' ordinal='8' />
+            <column datatype='string' name='Location' ordinal='9' />
+            <column datatype='string' name='Language' ordinal='10' />
+            <column datatype='string' name='Clicks' ordinal='11' />
+            <column datatype='string' name='Impressions' ordinal='12' />
+            <column datatype='string' name='Engagement_Score' ordinal='13' />
+            <column datatype='string' name='Customer_Segment' ordinal='14' />
+            <column datatype='date' name='Date' ordinal='15' />
+            <column datatype='integer' name='Month' ordinal='16' />
+            <column datatype='integer' name='Year' ordinal='17' />
+            <column datatype='integer' name='Quarter' ordinal='18' />
+            <column datatype='string' name='Month_Year' ordinal='19' />
+            <column datatype='string' name='CPC' ordinal='20' />
+            <column datatype='string' name='CTR' ordinal='21' />
+            <column datatype='string' name='Estimated_Revenue' ordinal='22' />
+            <column datatype='string' name='Profit' ordinal='23' />
+            <column datatype='string' name='ROI_Category' ordinal='24' />
+            <column datatype='string' name='Engagement_Level' ordinal='25' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[marketing_campaign_cleaned.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;Rp&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_ID&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Campaign_ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Campaign_ID]</local-name>
+            <parent-name>[marketing_campaign_cleaned.csv]</parent-name>
+            <remote-alias>Campaign_ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[marketing_campaign_cleaned.csv_FFD9756E357D41B1A4D8D0F84985B13C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Company</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Company]</local-name>
+            <parent-name>[marketing_campaign_cleaned.csv]</parent-name>
+            <remote-alias>Company</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[marketing_campaign_cleaned.csv_FFD9756E357D41B1A4D8D0F84985B13C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Campaign_Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Campaign_Type]</local-name>
+            <parent-name>[marketing_campaign_cleaned.csv]</parent-name>
+            <remote-alias>Campaign_Type</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[marketing_campaign_cleaned.csv_FFD9756E357D41B1A4D8D0F84985B13C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Target_Audience</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Target_Audience]</local-name>
+            <parent-name>[marketing_campaign_cleaned.csv]</parent-name>
+            <remote-alias>Target_Audience</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[marketing_campaign_cleaned.csv_FFD9756E357D41B1A4D8D0F84985B13C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Duration</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Duration]</local-name>
+            <parent-name>[marketing_campaign_cleaned.csv]</parent-name>
+            <remote-alias>Duration</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[marketing_campaign_cleaned.csv_FFD9756E357D41B1A4D8D0F84985B13C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Channel_Used</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Channel_Used]</local-name>
+            <parent-name>[marketing_campaign_cleaned.csv]</parent-name>
+            <remote-alias>Channel_Used</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[marketing_campaign_cleaned.csv_FFD9756E357D41B1A4D8D0F84985B13C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Conversion_Rate</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Conversion_Rate]</local-name>
+            <parent-name>[marketing_campaign_cleaned.csv]</parent-name>
+            <remote-alias>Conversion_Rate</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[marketing_campaign_cleaned.csv_FFD9756E357D41B1A4D8D0F84985B13C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Acquisition_Cost</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Acquisition_Cost]</local-name>
+            <parent-name>[marketing_campaign_cleaned.csv]</parent-name>
+            <remote-alias>Acquisition_Cost</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[marketing_campaign_cleaned.csv_FFD9756E357D41B1A4D8D0F84985B13C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ROI</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ROI]</local-name>
+            <parent-name>[marketing_campaign_cleaned.csv]</parent-name>
+            <remote-alias>ROI</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[marketing_campaign_cleaned.csv_FFD9756E357D41B1A4D8D0F84985B13C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Location]</local-name>
+            <parent-name>[marketing_campaign_cleaned.csv]</parent-name>
+            <remote-alias>Location</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[marketing_campaign_cleaned.csv_FFD9756E357D41B1A4D8D0F84985B13C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Language</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Language]</local-name>
+            <parent-name>[marketing_campaign_cleaned.csv]</parent-name>
+            <remote-alias>Language</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[marketing_campaign_cleaned.csv_FFD9756E357D41B1A4D8D0F84985B13C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Clicks</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Clicks]</local-name>
+            <parent-name>[marketing_campaign_cleaned.csv]</parent-name>
+            <remote-alias>Clicks</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[marketing_campaign_cleaned.csv_FFD9756E357D41B1A4D8D0F84985B13C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Impressions</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Impressions]</local-name>
+            <parent-name>[marketing_campaign_cleaned.csv]</parent-name>
+            <remote-alias>Impressions</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[marketing_campaign_cleaned.csv_FFD9756E357D41B1A4D8D0F84985B13C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Engagement_Score</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Engagement_Score]</local-name>
+            <parent-name>[marketing_campaign_cleaned.csv]</parent-name>
+            <remote-alias>Engagement_Score</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[marketing_campaign_cleaned.csv_FFD9756E357D41B1A4D8D0F84985B13C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer_Segment</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Customer_Segment]</local-name>
+            <parent-name>[marketing_campaign_cleaned.csv]</parent-name>
+            <remote-alias>Customer_Segment</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[marketing_campaign_cleaned.csv_FFD9756E357D41B1A4D8D0F84985B13C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[marketing_campaign_cleaned.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[marketing_campaign_cleaned.csv_FFD9756E357D41B1A4D8D0F84985B13C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Month</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Month]</local-name>
+            <parent-name>[marketing_campaign_cleaned.csv]</parent-name>
+            <remote-alias>Month</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[marketing_campaign_cleaned.csv_FFD9756E357D41B1A4D8D0F84985B13C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[marketing_campaign_cleaned.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[marketing_campaign_cleaned.csv_FFD9756E357D41B1A4D8D0F84985B13C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quarter</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Quarter]</local-name>
+            <parent-name>[marketing_campaign_cleaned.csv]</parent-name>
+            <remote-alias>Quarter</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[marketing_campaign_cleaned.csv_FFD9756E357D41B1A4D8D0F84985B13C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Month_Year</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Month_Year]</local-name>
+            <parent-name>[marketing_campaign_cleaned.csv]</parent-name>
+            <remote-alias>Month_Year</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[marketing_campaign_cleaned.csv_FFD9756E357D41B1A4D8D0F84985B13C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CPC</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CPC]</local-name>
+            <parent-name>[marketing_campaign_cleaned.csv]</parent-name>
+            <remote-alias>CPC</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[marketing_campaign_cleaned.csv_FFD9756E357D41B1A4D8D0F84985B13C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CTR</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CTR]</local-name>
+            <parent-name>[marketing_campaign_cleaned.csv]</parent-name>
+            <remote-alias>CTR</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[marketing_campaign_cleaned.csv_FFD9756E357D41B1A4D8D0F84985B13C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Estimated_Revenue</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Estimated_Revenue]</local-name>
+            <parent-name>[marketing_campaign_cleaned.csv]</parent-name>
+            <remote-alias>Estimated_Revenue</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[marketing_campaign_cleaned.csv_FFD9756E357D41B1A4D8D0F84985B13C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Profit</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Profit]</local-name>
+            <parent-name>[marketing_campaign_cleaned.csv]</parent-name>
+            <remote-alias>Profit</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[marketing_campaign_cleaned.csv_FFD9756E357D41B1A4D8D0F84985B13C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ROI_Category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ROI_Category]</local-name>
+            <parent-name>[marketing_campaign_cleaned.csv]</parent-name>
+            <remote-alias>ROI_Category</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[marketing_campaign_cleaned.csv_FFD9756E357D41B1A4D8D0F84985B13C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Engagement_Level</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Engagement_Level]</local-name>
+            <parent-name>[marketing_campaign_cleaned.csv]</parent-name>
+            <remote-alias>Engagement_Level</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[marketing_campaign_cleaned.csv_FFD9756E357D41B1A4D8D0F84985B13C]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Acquisition Cost' datatype='string' hidden='true' name='[Acquisition_Cost]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[CPC]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[CTR]' role='dimension' type='nominal' />
+      <column caption='Acquisition Cost_clean' datatype='real' datatype-customized='true' name='[Calculation_4293830413601841153]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='FLOAT(REPLACE([Acquisition_Cost], &apos;,&apos;, &apos;&apos;))' />
+      </column>
+      <column caption='Conversion Rate_clean' datatype='real' name='[Calculation_4293830413603041282]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='FLOAT(REPLACE(REPLACE([Conversion_Rate], &apos;\%&apos;, &apos;&apos;), &apos;,&apos;, &apos;&apos;))' />
+      </column>
+      <column caption='ROI_clean' datatype='real' datatype-customized='true' name='[Calculation_4293830413604466691]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='FLOAT(REPLACE([ROI], &apos;,&apos;, &apos;&apos;))' />
+      </column>
+      <column caption='Clicks_clean' datatype='real' datatype-customized='true' name='[Calculation_4293830413604732932]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='FLOAT(REPLACE([Clicks], &apos;,&apos;, &apos;&apos;))' />
+      </column>
+      <column caption='Impressions_clean' datatype='real' datatype-customized='true' name='[Calculation_4293830413605081093]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='FLOAT(REPLACE([Impressions], &apos;,&apos;, &apos;&apos;))' />
+      </column>
+      <column caption='Engagement Score_clean' datatype='real' name='[Calculation_4293830413605388295]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='FLOAT(REPLACE([Engagement_Score], &apos;,&apos;, &apos;&apos;))' />
+      </column>
+      <column caption='CPC_clean' datatype='real' name='[Calculation_4293830413605548040]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='FLOAT(REPLACE([CPC], &apos;,&apos;, &apos;&apos;))' />
+      </column>
+      <column caption='CTR_clean' datatype='real' name='[Calculation_4293830413605691401]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='FLOAT(REPLACE([CTR], &apos;,&apos;, &apos;&apos;))' />
+      </column>
+      <column caption='Estimated Revenue_clean' datatype='real' name='[Calculation_4293830413605777418]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='FLOAT(REPLACE([Estimated_Revenue], &apos;,&apos;, &apos;&apos;))' />
+      </column>
+      <column caption='Profit_clean' datatype='real' name='[Calculation_4293830413605945355]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='FLOAT(REPLACE([Profit], &apos;,&apos;, &apos;&apos;))' />
+      </column>
+      <column caption='Highlight Top/Bottom ROI' datatype='string' default-role='measure' default-type='quantitative' name='[Calculation_4293830413642252300]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Calculation_4293830413604466691] &gt;= 7.5 OR [Calculation_4293830413604466691] &lt;= 3 THEN [Campaign_ID]END' />
+      </column>
+      <column caption='Sweet Spot Campaign' datatype='string' name='[Calculation_4293830413648621582]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='IF AVG([Calculation_4293830413605548040]) &lt; 15 &#10;AND AVG([Calculation_4293830413605691401]) &gt; 70 &#10;THEN ATTR([Campaign_ID]) &#10;END' />
+      </column>
+      <column caption='Campaign ID' datatype='string' name='[Campaign_ID]' role='dimension' type='nominal' />
+      <column caption='Campaign Type' datatype='string' name='[Campaign_Type]' role='dimension' type='nominal' />
+      <column caption='Channel Used' datatype='string' name='[Channel_Used]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[Clicks]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Company]' role='dimension' type='nominal' />
+      <column caption='Conversion Rate' datatype='string' hidden='true' name='[Conversion_Rate]' role='dimension' type='nominal' />
+      <column caption='Customer Segment' datatype='string' name='[Customer_Segment]' role='dimension' type='nominal' />
+      <column caption='Engagement Level' datatype='string' name='[Engagement_Level]' role='dimension' type='nominal' />
+      <column caption='Engagement Score' datatype='string' hidden='true' name='[Engagement_Score]' role='dimension' type='nominal' />
+      <column caption='Estimated Revenue' datatype='string' hidden='true' name='[Estimated_Revenue]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[Impressions]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Month]' role='dimension' type='quantitative' />
+      <column caption='Month Year' datatype='string' name='[Month_Year]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[Profit]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Quarter]' role='dimension' type='quantitative' />
+      <column datatype='string' hidden='true' name='[ROI]' role='dimension' type='nominal' />
+      <column caption='ROI Category' datatype='string' name='[ROI_Category]' role='dimension' type='nominal' />
+      <column caption='Target Audience' datatype='string' name='[Target_Audience]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <column caption='marketing_campaign_cleaned.csv' datatype='table' name='[__tableau_internal_object_id__].[marketing_campaign_cleaned.csv_FFD9756E357D41B1A4D8D0F84985B13C]' role='measure' type='quantitative' />
+      <column-instance column='[Channel_Used]' derivation='None' name='[none:Channel_Used:nk]' pivot='key' type='nominal' />
+      <group caption='Action (Campaign ID)' hidden='true' name='[Action (Campaign ID)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Campaign_ID]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Campaign ID,Channel Used)' hidden='true' name='[Action (Campaign ID,Channel Used)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Campaign_ID]' />
+          <groupfilter function='level-members' level='[Channel_Used]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Channel Used)' hidden='true' name='[Action (Channel Used)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Channel_Used]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Channel Used,Company)' hidden='true' name='[Action (Channel Used,Company)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Channel_Used]' />
+          <groupfilter function='level-members' level='[Company]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Customer Segment)' hidden='true' name='[Action (Customer Segment)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Customer_Segment]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='/Users/codelearner/dibimbing/PythonProject/marketing_campaign_cleaned.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Campaign_ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Campaign_ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Campaign_ID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>marketing_campaign_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>100000</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Company</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Company]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Company</remote-alias>
+              <ordinal>1</ordinal>
+              <family>marketing_campaign_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Campaign_Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Campaign_Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Campaign_Type</remote-alias>
+              <ordinal>2</ordinal>
+              <family>marketing_campaign_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Target_Audience</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Target_Audience]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Target_Audience</remote-alias>
+              <ordinal>3</ordinal>
+              <family>marketing_campaign_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Duration</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Duration]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Duration</remote-alias>
+              <ordinal>4</ordinal>
+              <family>marketing_campaign_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Channel_Used</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Channel_Used]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Channel_Used</remote-alias>
+              <ordinal>5</ordinal>
+              <family>marketing_campaign_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Conversion_Rate</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Conversion_Rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Conversion_Rate</remote-alias>
+              <ordinal>6</ordinal>
+              <family>marketing_campaign_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Acquisition_Cost</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Acquisition_Cost]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Acquisition_Cost</remote-alias>
+              <ordinal>7</ordinal>
+              <family>marketing_campaign_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>24122</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ROI</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ROI]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ROI</remote-alias>
+              <ordinal>8</ordinal>
+              <family>marketing_campaign_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2027</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Location</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Location]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Location</remote-alias>
+              <ordinal>9</ordinal>
+              <family>marketing_campaign_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Language</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Language]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Language</remote-alias>
+              <ordinal>10</ordinal>
+              <family>marketing_campaign_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Clicks</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Clicks]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Clicks</remote-alias>
+              <ordinal>11</ordinal>
+              <family>marketing_campaign_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3584</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Impressions</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Impressions]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Impressions</remote-alias>
+              <ordinal>12</ordinal>
+              <family>marketing_campaign_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>20559</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Engagement_Score</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Engagement_Score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Engagement_Score</remote-alias>
+              <ordinal>13</ordinal>
+              <family>marketing_campaign_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Customer_Segment</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Customer_Segment]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Customer_Segment</remote-alias>
+              <ordinal>14</ordinal>
+              <family>marketing_campaign_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>15</ordinal>
+              <family>marketing_campaign_cleaned.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>933</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Month</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Month</remote-alias>
+              <ordinal>16</ordinal>
+              <family>marketing_campaign_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>17</ordinal>
+              <family>marketing_campaign_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Quarter</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Quarter]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Quarter</remote-alias>
+              <ordinal>18</ordinal>
+              <family>marketing_campaign_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Month_Year</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Month_Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Month_Year</remote-alias>
+              <ordinal>19</ordinal>
+              <family>marketing_campaign_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CPC</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CPC]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CPC</remote-alias>
+              <ordinal>20</ordinal>
+              <family>marketing_campaign_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>100000</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CTR</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CTR]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CTR</remote-alias>
+              <ordinal>21</ordinal>
+              <family>marketing_campaign_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>89557</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Estimated_Revenue</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Estimated_Revenue]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Estimated_Revenue</remote-alias>
+              <ordinal>22</ordinal>
+              <family>marketing_campaign_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>94779</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Profit</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Profit]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Profit</remote-alias>
+              <ordinal>23</ordinal>
+              <family>marketing_campaign_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>100000</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ROI_Category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ROI_Category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ROI_Category</remote-alias>
+              <ordinal>24</ordinal>
+              <family>marketing_campaign_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Engagement_Level</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Engagement_Level]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Engagement_Level</remote-alias>
+              <ordinal>25</ordinal>
+              <family>marketing_campaign_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Channel_Used:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Email&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Website&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Instagram&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Google Ads&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;YouTube&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Facebook&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Indonesia&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='Campaign_ID' />
+        <field-sort-custom-order field='Company' />
+        <field-sort-custom-order field='Campaign_Type' />
+        <field-sort-custom-order field='Target_Audience' />
+        <field-sort-custom-order field='Duration' />
+        <field-sort-custom-order field='Channel_Used' />
+        <field-sort-custom-order field='Conversion_Rate' />
+        <field-sort-custom-order field='Calculation_4293830413603041282' />
+        <field-sort-custom-order field='Acquisition_Cost' />
+        <field-sort-custom-order field='Calculation_4293830413601841153' />
+        <field-sort-custom-order field='ROI' />
+        <field-sort-custom-order field='Calculation_4293830413604466691' />
+        <field-sort-custom-order field='Location' />
+        <field-sort-custom-order field='Language' />
+        <field-sort-custom-order field='Clicks' />
+        <field-sort-custom-order field='Calculation_4293830413604732932' />
+        <field-sort-custom-order field='Impressions' />
+        <field-sort-custom-order field='Calculation_4293830413605081093' />
+        <field-sort-custom-order field='Engagement_Score' />
+        <field-sort-custom-order field='Calculation_4293830413605388295' />
+        <field-sort-custom-order field='Customer_Segment' />
+        <field-sort-custom-order field='Date' />
+        <field-sort-custom-order field='Month' />
+        <field-sort-custom-order field='Year' />
+        <field-sort-custom-order field='Quarter' />
+        <field-sort-custom-order field='Month_Year' />
+        <field-sort-custom-order field='CPC' />
+        <field-sort-custom-order field='Calculation_4293830413605548040' />
+        <field-sort-custom-order field='CTR' />
+        <field-sort-custom-order field='Calculation_4293830413605691401' />
+        <field-sort-custom-order field='Estimated_Revenue' />
+        <field-sort-custom-order field='Calculation_4293830413605777418' />
+        <field-sort-custom-order field='Profit' />
+        <field-sort-custom-order field='Calculation_4293830413605945355' />
+        <field-sort-custom-order field='ROI_Category' />
+        <field-sort-custom-order field='Engagement_Level' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='marketing_campaign_cleaned.csv' id='marketing_campaign_cleaned.csv_FFD9756E357D41B1A4D8D0F84985B13C'>
+            <properties context=''>
+              <relation connection='textscan.1pn7fqz0yf9wwv18z7bzq19vjg5o' name='marketing_campaign_cleaned.csv' table='[marketing_campaign_cleaned#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_ID'>
+                  <column datatype='string' name='Campaign_ID' ordinal='0' />
+                  <column datatype='string' name='Company' ordinal='1' />
+                  <column datatype='string' name='Campaign_Type' ordinal='2' />
+                  <column datatype='string' name='Target_Audience' ordinal='3' />
+                  <column datatype='string' name='Duration' ordinal='4' />
+                  <column datatype='string' name='Channel_Used' ordinal='5' />
+                  <column datatype='string' name='Conversion_Rate' ordinal='6' />
+                  <column datatype='string' name='Acquisition_Cost' ordinal='7' />
+                  <column datatype='string' name='ROI' ordinal='8' />
+                  <column datatype='string' name='Location' ordinal='9' />
+                  <column datatype='string' name='Language' ordinal='10' />
+                  <column datatype='string' name='Clicks' ordinal='11' />
+                  <column datatype='string' name='Impressions' ordinal='12' />
+                  <column datatype='string' name='Engagement_Score' ordinal='13' />
+                  <column datatype='string' name='Customer_Segment' ordinal='14' />
+                  <column datatype='date' name='Date' ordinal='15' />
+                  <column datatype='integer' name='Month' ordinal='16' />
+                  <column datatype='integer' name='Year' ordinal='17' />
+                  <column datatype='integer' name='Quarter' ordinal='18' />
+                  <column datatype='string' name='Month_Year' ordinal='19' />
+                  <column datatype='string' name='CPC' ordinal='20' />
+                  <column datatype='string' name='CTR' ordinal='21' />
+                  <column datatype='string' name='Estimated_Revenue' ordinal='22' />
+                  <column datatype='string' name='Profit' ordinal='23' />
+                  <column datatype='string' name='ROI_Category' ordinal='24' />
+                  <column datatype='string' name='Engagement_Level' ordinal='25' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.03rmiph0j05sqo1grw6kl1spralb'>
+      <datasources>
+        <datasource caption='marketing_campaign_cleaned' name='federated.03rmiph0j05sqo1grw6kl1spralb' />
+      </datasources>
+      <datasource-dependencies datasource='federated.03rmiph0j05sqo1grw6kl1spralb'>
+        <column caption='Channel Used' datatype='string' name='[Channel_Used]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Company]' role='dimension' type='nominal' />
+        <column caption='Customer Segment' datatype='string' name='[Customer_Segment]' role='dimension' type='nominal' />
+        <column-instance column='[Channel_Used]' derivation='None' name='[none:Channel_Used:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Company]' derivation='None' name='[none:Company:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Customer_Segment]' derivation='None' name='[none:Customer_Segment:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Channel_Used:nk]'>
+        <groupfilter function='level-members' level='[none:Channel_Used:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Company:nk]'>
+        <groupfilter function='level-members' level='[none:Company:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Customer_Segment:nk]'>
+        <groupfilter function='level-members' level='[none:Customer_Segment:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_189D63158C194EB099A94C75D3C72EB6]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Channel Performance: Conversion &amp; ROI' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2_F59A322C551B4F82AD2370C6D63B599F]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 2' type='sheet' worksheet='Company Heatmap' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 2' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action3_11E48598DA8244AA8A38A2FDE124D5E7]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 2' type='sheet' worksheet='Customer Segment Profit' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 2' />
+      </command>
+    </action>
+    <action caption='Filter 4 (generated)' name='[Action4_F0C8C0774B8F40D1BA77F736227AAC7A]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 2' type='sheet' worksheet='Scatter Plot ROI' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 2' />
+      </command>
+    </action>
+    <action caption='Filter 5 (generated)' name='[Action5_566125BDD643473F80B8DA6AEC2D28A4]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 2' type='sheet' worksheet='CTR vs CPC Analysis' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 2' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='CTR vs CPC Analysis'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='marketing_campaign_cleaned' name='federated.03rmiph0j05sqo1grw6kl1spralb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03rmiph0j05sqo1grw6kl1spralb'>
+            <column datatype='string' hidden='true' name='[CPC]' role='dimension' type='nominal' />
+            <column datatype='string' hidden='true' name='[CTR]' role='dimension' type='nominal' />
+            <column caption='Impressions_clean' datatype='real' datatype-customized='true' name='[Calculation_4293830413605081093]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT(REPLACE([Impressions], &apos;,&apos;, &apos;&apos;))' />
+            </column>
+            <column caption='CPC_clean' datatype='real' name='[Calculation_4293830413605548040]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT(REPLACE([CPC], &apos;,&apos;, &apos;&apos;))' />
+            </column>
+            <column caption='CTR_clean' datatype='real' name='[Calculation_4293830413605691401]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT(REPLACE([CTR], &apos;,&apos;, &apos;&apos;))' />
+            </column>
+            <column caption='Sweet Spot Campaign' datatype='string' name='[Calculation_4293830413648621582]' role='measure' type='nominal'>
+              <calculation class='tableau' formula='IF AVG([Calculation_4293830413605548040]) &lt; 15 &#10;AND AVG([Calculation_4293830413605691401]) &gt; 70 &#10;THEN ATTR([Campaign_ID]) &#10;END' />
+            </column>
+            <column caption='Campaign ID' datatype='string' name='[Campaign_ID]' role='dimension' type='nominal' />
+            <column caption='Channel Used' datatype='string' name='[Channel_Used]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Company]' role='dimension' type='nominal' />
+            <column caption='Customer Segment' datatype='string' name='[Customer_Segment]' role='dimension' type='nominal' />
+            <column datatype='string' hidden='true' name='[Impressions]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_4293830413605548040]' derivation='Avg' name='[avg:Calculation_4293830413605548040:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_4293830413605691401]' derivation='Avg' name='[avg:Calculation_4293830413605691401:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Campaign_ID]' derivation='None' name='[none:Campaign_ID:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Channel_Used]' derivation='None' name='[none:Channel_Used:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Company]' derivation='None' name='[none:Company:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Customer_Segment]' derivation='None' name='[none:Customer_Segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_4293830413605081093]' derivation='Sum' name='[sum:Calculation_4293830413605081093:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_4293830413648621582]' derivation='User' name='[usr:Calculation_4293830413648621582:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.03rmiph0j05sqo1grw6kl1spralb].[Action (Campaign ID)]'>
+            <groupfilter function='level-members' level='[Campaign_ID]' user:ui-action-filter='[Action4_F0C8C0774B8F40D1BA77F736227AAC7A]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.03rmiph0j05sqo1grw6kl1spralb].[Action (Channel Used,Company)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2_F59A322C551B4F82AD2370C6D63B599F]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Channel_Used]' />
+              <groupfilter function='level-members' level='[Company]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.03rmiph0j05sqo1grw6kl1spralb].[Action (Customer Segment)]'>
+            <groupfilter function='level-members' level='[Customer_Segment]' user:ui-action-filter='[Action3_11E48598DA8244AA8A38A2FDE124D5E7]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Channel_Used:nk]</column>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[Action (Channel Used,Company)]</column>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[Action (Customer Segment)]</column>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Company:nk]</column>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Customer_Segment:nk]</column>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[Action (Campaign ID)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.03rmiph0j05sqo1grw6kl1spralb].[avg:Calculation_4293830413605691401:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#faf5f0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Channel_Used:nk]' />
+              <size column='[federated.03rmiph0j05sqo1grw6kl1spralb].[sum:Calculation_4293830413605081093:qk]' />
+              <text column='[federated.03rmiph0j05sqo1grw6kl1spralb].[usr:Calculation_4293830413648621582:nk]' />
+              <lod column='[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Campaign_ID:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.03rmiph0j05sqo1grw6kl1spralb].[avg:Calculation_4293830413605691401:qk]</rows>
+        <cols>[federated.03rmiph0j05sqo1grw6kl1spralb].[avg:Calculation_4293830413605548040:qk]</cols>
+      </table>
+      <simple-id uuid='{678813FA-34A9-4494-841F-20F5701E26C9}' />
+    </worksheet>
+    <worksheet name='Channel Performance: Conversion &amp; ROI'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Channel Performance: Conversion &amp; ROI</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='marketing_campaign_cleaned' name='federated.03rmiph0j05sqo1grw6kl1spralb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03rmiph0j05sqo1grw6kl1spralb'>
+            <column caption='Conversion Rate_clean' datatype='real' name='[Calculation_4293830413603041282]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT(REPLACE(REPLACE([Conversion_Rate], &apos;\%&apos;, &apos;&apos;), &apos;,&apos;, &apos;&apos;))' />
+            </column>
+            <column caption='ROI_clean' datatype='real' datatype-customized='true' name='[Calculation_4293830413604466691]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT(REPLACE([ROI], &apos;,&apos;, &apos;&apos;))' />
+            </column>
+            <column caption='Channel Used' datatype='string' name='[Channel_Used]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Company]' role='dimension' type='nominal' />
+            <column caption='Conversion Rate' datatype='string' hidden='true' name='[Conversion_Rate]' role='dimension' type='nominal' />
+            <column caption='Customer Segment' datatype='string' name='[Customer_Segment]' role='dimension' type='nominal' />
+            <column datatype='string' hidden='true' name='[ROI]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_4293830413603041282]' derivation='Avg' name='[avg:Calculation_4293830413603041282:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_4293830413604466691]' derivation='Avg' name='[avg:Calculation_4293830413604466691:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Channel_Used]' derivation='None' name='[none:Channel_Used:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Company]' derivation='None' name='[none:Company:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Customer_Segment]' derivation='None' name='[none:Customer_Segment:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Channel_Used:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.03rmiph0j05sqo1grw6kl1spralb].[avg:Calculation_4293830413603041282:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Channel_Used:nk]</column>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Company:nk]</column>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Customer_Segment:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.03rmiph0j05sqo1grw6kl1spralb].[avg:Calculation_4293830413603041282:qk]' value='p0.000%' />
+            <format attr='text-format' field='[federated.03rmiph0j05sqo1grw6kl1spralb].[avg:Calculation_4293830413604466691:qk]' value='p0.00%' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#faf5f0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.03rmiph0j05sqo1grw6kl1spralb].[avg:Calculation_4293830413604466691:qk]' />
+              <text column='[federated.03rmiph0j05sqo1grw6kl1spralb].[avg:Calculation_4293830413603041282:qk]' />
+              <text column='[federated.03rmiph0j05sqo1grw6kl1spralb].[avg:Calculation_4293830413604466691:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Channel_Used:nk]</rows>
+        <cols>[federated.03rmiph0j05sqo1grw6kl1spralb].[avg:Calculation_4293830413603041282:qk]</cols>
+      </table>
+      <simple-id uuid='{3552BAE3-A518-465D-A0B5-20B0D3332913}' />
+    </worksheet>
+    <worksheet name='Company Heatmap'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='marketing_campaign_cleaned' name='federated.03rmiph0j05sqo1grw6kl1spralb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03rmiph0j05sqo1grw6kl1spralb'>
+            <column caption='Estimated Revenue_clean' datatype='real' name='[Calculation_4293830413605777418]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT(REPLACE([Estimated_Revenue], &apos;,&apos;, &apos;&apos;))' />
+            </column>
+            <column caption='Campaign ID' datatype='string' name='[Campaign_ID]' role='dimension' type='nominal' />
+            <column caption='Channel Used' datatype='string' name='[Channel_Used]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Company]' role='dimension' type='nominal' />
+            <column caption='Customer Segment' datatype='string' name='[Customer_Segment]' role='dimension' type='nominal' />
+            <column caption='Estimated Revenue' datatype='string' hidden='true' name='[Estimated_Revenue]' role='dimension' type='nominal' />
+            <column-instance column='[Channel_Used]' derivation='None' name='[none:Channel_Used:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Company]' derivation='None' name='[none:Company:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Customer_Segment]' derivation='None' name='[none:Customer_Segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_4293830413605777418]' derivation='Sum' name='[sum:Calculation_4293830413605777418:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.03rmiph0j05sqo1grw6kl1spralb].[Action (Campaign ID)]'>
+            <groupfilter function='level-members' level='[Campaign_ID]' user:ui-action-filter='[Action4_F0C8C0774B8F40D1BA77F736227AAC7A]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.03rmiph0j05sqo1grw6kl1spralb].[Action (Campaign ID,Channel Used)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action5_566125BDD643473F80B8DA6AEC2D28A4]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Campaign_ID]' />
+              <groupfilter function='level-members' level='[Channel_Used]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.03rmiph0j05sqo1grw6kl1spralb].[Action (Customer Segment)]'>
+            <groupfilter function='level-members' level='[Customer_Segment]' user:ui-action-filter='[Action3_11E48598DA8244AA8A38A2FDE124D5E7]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Channel_Used:nk]</column>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[Action (Customer Segment)]</column>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Company:nk]</column>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Customer_Segment:nk]</column>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[Action (Campaign ID)]</column>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[Action (Campaign ID,Channel Used)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='cell-w' value='20' />
+            <format attr='cell-h' value='20' />
+            <format attr='cell' value='20' />
+            <format attr='cell-q' value='100' />
+            <format attr='text-format' field='[federated.03rmiph0j05sqo1grw6kl1spralb].[sum:Calculation_4293830413605777418:qk]' value='c&quot;$&quot;#,##0,,M;-&quot;$&quot;#,##0,,M' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#faf5f0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.03rmiph0j05sqo1grw6kl1spralb].[sum:Calculation_4293830413605777418:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.7911050319671631' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Company:nk]</rows>
+        <cols>[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Channel_Used:nk]</cols>
+      </table>
+      <simple-id uuid='{2290C491-4988-479B-AD85-8CD9AFFA3762}' />
+    </worksheet>
+    <worksheet name='Customer Segment Profit'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='marketing_campaign_cleaned' name='federated.03rmiph0j05sqo1grw6kl1spralb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03rmiph0j05sqo1grw6kl1spralb'>
+            <column caption='Acquisition Cost' datatype='string' hidden='true' name='[Acquisition_Cost]' role='dimension' type='nominal' />
+            <column caption='Acquisition Cost_clean' datatype='real' datatype-customized='true' name='[Calculation_4293830413601841153]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT(REPLACE([Acquisition_Cost], &apos;,&apos;, &apos;&apos;))' />
+            </column>
+            <column caption='Estimated Revenue_clean' datatype='real' name='[Calculation_4293830413605777418]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT(REPLACE([Estimated_Revenue], &apos;,&apos;, &apos;&apos;))' />
+            </column>
+            <column caption='Profit_clean' datatype='real' name='[Calculation_4293830413605945355]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT(REPLACE([Profit], &apos;,&apos;, &apos;&apos;))' />
+            </column>
+            <column caption='Campaign ID' datatype='string' name='[Campaign_ID]' role='dimension' type='nominal' />
+            <column caption='Channel Used' datatype='string' name='[Channel_Used]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Company]' role='dimension' type='nominal' />
+            <column caption='Customer Segment' datatype='string' name='[Customer_Segment]' role='dimension' type='nominal' />
+            <column caption='Estimated Revenue' datatype='string' hidden='true' name='[Estimated_Revenue]' role='dimension' type='nominal' />
+            <column datatype='string' hidden='true' name='[Profit]' role='dimension' type='nominal' />
+            <column-instance column='[Channel_Used]' derivation='None' name='[none:Channel_Used:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Company]' derivation='None' name='[none:Company:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Customer_Segment]' derivation='None' name='[none:Customer_Segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_4293830413601841153]' derivation='Sum' name='[sum:Calculation_4293830413601841153:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_4293830413605777418]' derivation='Sum' name='[sum:Calculation_4293830413605777418:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_4293830413605945355]' derivation='Sum' name='[sum:Calculation_4293830413605945355:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.03rmiph0j05sqo1grw6kl1spralb].[Action (Campaign ID)]'>
+            <groupfilter function='level-members' level='[Campaign_ID]' user:ui-action-filter='[Action4_F0C8C0774B8F40D1BA77F736227AAC7A]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.03rmiph0j05sqo1grw6kl1spralb].[Action (Campaign ID,Channel Used)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action5_566125BDD643473F80B8DA6AEC2D28A4]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Campaign_ID]' />
+              <groupfilter function='level-members' level='[Channel_Used]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.03rmiph0j05sqo1grw6kl1spralb].[Action (Channel Used,Company)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2_F59A322C551B4F82AD2370C6D63B599F]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Channel_Used]' />
+              <groupfilter function='level-members' level='[Company]' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Customer_Segment:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Foodies&quot;</bucket>
+              <bucket>&quot;Tech Enthusiasts&quot;</bucket>
+              <bucket>&quot;Outdoor Adventurers&quot;</bucket>
+              <bucket>&quot;Health &amp; Wellness&quot;</bucket>
+              <bucket>&quot;Fashionistas&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Channel_Used:nk]</column>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[Action (Channel Used,Company)]</column>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Company:nk]</column>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Customer_Segment:nk]</column>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[Action (Campaign ID)]</column>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[Action (Campaign ID,Channel Used)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.03rmiph0j05sqo1grw6kl1spralb].[sum:Calculation_4293830413605777418:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='21' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#faf5f0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.03rmiph0j05sqo1grw6kl1spralb].[sum:Calculation_4293830413605945355:qk]' />
+              <text column='[federated.03rmiph0j05sqo1grw6kl1spralb].[sum:Calculation_4293830413605777418:qk]' />
+              <tooltip column='[federated.03rmiph0j05sqo1grw6kl1spralb].[sum:Calculation_4293830413601841153:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.03rmiph0j05sqo1grw6kl1spralb].[sum:Calculation_4293830413605777418:qk]</rows>
+        <cols>[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Customer_Segment:nk]</cols>
+      </table>
+      <simple-id uuid='{5FE11BEA-CE1D-4942-9D21-1AB97AEF4659}' />
+    </worksheet>
+    <worksheet name='KPI Average CR'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#000000' fontname='Tableau Bold'>Average Conversion Rate</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='marketing_campaign_cleaned' name='federated.03rmiph0j05sqo1grw6kl1spralb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03rmiph0j05sqo1grw6kl1spralb'>
+            <column caption='Conversion Rate_clean' datatype='real' name='[Calculation_4293830413603041282]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT(REPLACE(REPLACE([Conversion_Rate], &apos;\%&apos;, &apos;&apos;), &apos;,&apos;, &apos;&apos;))' />
+            </column>
+            <column caption='Channel Used' datatype='string' name='[Channel_Used]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Company]' role='dimension' type='nominal' />
+            <column caption='Conversion Rate' datatype='string' hidden='true' name='[Conversion_Rate]' role='dimension' type='nominal' />
+            <column caption='Customer Segment' datatype='string' name='[Customer_Segment]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_4293830413603041282]' derivation='Avg' name='[avg:Calculation_4293830413603041282:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Channel_Used]' derivation='None' name='[none:Channel_Used:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Company]' derivation='None' name='[none:Company:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Customer_Segment]' derivation='None' name='[none:Customer_Segment:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.03rmiph0j05sqo1grw6kl1spralb].[Action (Channel Used)]'>
+            <groupfilter function='level-members' level='[Channel_Used]' user:ui-action-filter='[Action1_189D63158C194EB099A94C75D3C72EB6]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[Action (Channel Used)]</column>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Channel_Used:nk]</column>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Company:nk]</column>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Customer_Segment:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.03rmiph0j05sqo1grw6kl1spralb].[avg:Calculation_4293830413603041282:qk]' value='p0.00%' />
+            <format attr='font-size' field='[federated.03rmiph0j05sqo1grw6kl1spralb].[avg:Calculation_4293830413603041282:qk]' value='15' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#faf5f0' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Tableau Bold' />
+            <format attr='font-size' value='36' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.03rmiph0j05sqo1grw6kl1spralb].[avg:Calculation_4293830413603041282:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{DA9A72E2-E7A2-4700-ABF2-784ABF431A62}' />
+    </worksheet>
+    <worksheet name='KPI Average ROI'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#000000' fontname='Tableau Bold'>Average Return on Investment (ROI)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='marketing_campaign_cleaned' name='federated.03rmiph0j05sqo1grw6kl1spralb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03rmiph0j05sqo1grw6kl1spralb'>
+            <column caption='ROI_clean' datatype='real' datatype-customized='true' name='[Calculation_4293830413604466691]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT(REPLACE([ROI], &apos;,&apos;, &apos;&apos;))' />
+            </column>
+            <column caption='Channel Used' datatype='string' name='[Channel_Used]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Company]' role='dimension' type='nominal' />
+            <column caption='Customer Segment' datatype='string' name='[Customer_Segment]' role='dimension' type='nominal' />
+            <column datatype='string' hidden='true' name='[ROI]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_4293830413604466691]' derivation='Avg' name='[avg:Calculation_4293830413604466691:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Channel_Used]' derivation='None' name='[none:Channel_Used:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Company]' derivation='None' name='[none:Company:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Customer_Segment]' derivation='None' name='[none:Customer_Segment:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.03rmiph0j05sqo1grw6kl1spralb].[Action (Channel Used)]'>
+            <groupfilter function='level-members' level='[Channel_Used]' user:ui-action-filter='[Action1_189D63158C194EB099A94C75D3C72EB6]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[Action (Channel Used)]</column>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Channel_Used:nk]</column>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Company:nk]</column>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Customer_Segment:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.03rmiph0j05sqo1grw6kl1spralb].[avg:Calculation_4293830413604466691:qk]' value='p0.00%' />
+            <format attr='font-size' field='[federated.03rmiph0j05sqo1grw6kl1spralb].[avg:Calculation_4293830413604466691:qk]' value='15' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#faf5f0' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Tableau Bold' />
+            <format attr='font-size' value='36' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.03rmiph0j05sqo1grw6kl1spralb].[avg:Calculation_4293830413604466691:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{71D6E418-3F2E-4757-B864-FAFDCED29199}' />
+    </worksheet>
+    <worksheet name='KPI Total Cost'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#000000' fontname='Tableau Bold'>Total Acquisition Cost</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='marketing_campaign_cleaned' name='federated.03rmiph0j05sqo1grw6kl1spralb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03rmiph0j05sqo1grw6kl1spralb'>
+            <column caption='Acquisition Cost' datatype='string' hidden='true' name='[Acquisition_Cost]' role='dimension' type='nominal' />
+            <column caption='Acquisition Cost_clean' datatype='real' datatype-customized='true' name='[Calculation_4293830413601841153]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT(REPLACE([Acquisition_Cost], &apos;,&apos;, &apos;&apos;))' />
+            </column>
+            <column caption='Channel Used' datatype='string' name='[Channel_Used]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Company]' role='dimension' type='nominal' />
+            <column caption='Customer Segment' datatype='string' name='[Customer_Segment]' role='dimension' type='nominal' />
+            <column-instance column='[Channel_Used]' derivation='None' name='[none:Channel_Used:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Company]' derivation='None' name='[none:Company:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Customer_Segment]' derivation='None' name='[none:Customer_Segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_4293830413601841153]' derivation='Sum' name='[sum:Calculation_4293830413601841153:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.03rmiph0j05sqo1grw6kl1spralb].[Action (Channel Used)]'>
+            <groupfilter function='level-members' level='[Channel_Used]' user:ui-action-filter='[Action1_189D63158C194EB099A94C75D3C72EB6]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[Action (Channel Used)]</column>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Channel_Used:nk]</column>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Company:nk]</column>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Customer_Segment:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.03rmiph0j05sqo1grw6kl1spralb].[sum:Calculation_4293830413601841153:qk]' value='c&quot;$&quot;#,##0,,M;-&quot;$&quot;#,##0,,M' />
+            <format attr='font-weight' field='[federated.03rmiph0j05sqo1grw6kl1spralb].[sum:Calculation_4293830413601841153:qk]' value='normal' />
+            <format attr='font-size' field='[federated.03rmiph0j05sqo1grw6kl1spralb].[sum:Calculation_4293830413601841153:qk]' value='15' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='text-align' data-class='total' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#faf5f0' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Tableau Bold' />
+            <format attr='font-size' value='15' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.03rmiph0j05sqo1grw6kl1spralb].[sum:Calculation_4293830413601841153:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.03rmiph0j05sqo1grw6kl1spralb].[sum:Calculation_4293830413601841153:qk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{53A50737-5853-4262-B567-0C6AEE2EB84E}' />
+    </worksheet>
+    <worksheet name='KPI Total Profit'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#000000' fontname='Tableau Bold'>Total Profit</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='marketing_campaign_cleaned' name='federated.03rmiph0j05sqo1grw6kl1spralb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03rmiph0j05sqo1grw6kl1spralb'>
+            <column caption='Profit_clean' datatype='real' name='[Calculation_4293830413605945355]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT(REPLACE([Profit], &apos;,&apos;, &apos;&apos;))' />
+            </column>
+            <column caption='Channel Used' datatype='string' name='[Channel_Used]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Company]' role='dimension' type='nominal' />
+            <column caption='Customer Segment' datatype='string' name='[Customer_Segment]' role='dimension' type='nominal' />
+            <column datatype='string' hidden='true' name='[Profit]' role='dimension' type='nominal' />
+            <column-instance column='[Channel_Used]' derivation='None' name='[none:Channel_Used:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Company]' derivation='None' name='[none:Company:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Customer_Segment]' derivation='None' name='[none:Customer_Segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_4293830413605945355]' derivation='Sum' name='[sum:Calculation_4293830413605945355:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.03rmiph0j05sqo1grw6kl1spralb].[Action (Channel Used)]'>
+            <groupfilter function='level-members' level='[Channel_Used]' user:ui-action-filter='[Action1_189D63158C194EB099A94C75D3C72EB6]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[Action (Channel Used)]</column>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Channel_Used:nk]</column>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Company:nk]</column>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Customer_Segment:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.03rmiph0j05sqo1grw6kl1spralb].[sum:Calculation_4293830413605945355:qk]' value='c&quot;$&quot;#,##0,,M;-&quot;$&quot;#,##0,,M' />
+            <format attr='font-size' field='[federated.03rmiph0j05sqo1grw6kl1spralb].[sum:Calculation_4293830413605945355:qk]' value='15' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#faf5f0' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Tableau Bold' />
+            <format attr='font-size' value='36' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.03rmiph0j05sqo1grw6kl1spralb].[sum:Calculation_4293830413605945355:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{E5D9BA11-35BF-4A4F-B2DF-C0873F2ABA32}' />
+    </worksheet>
+    <worksheet name='KPI Total Revenue'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#000000' fontname='Tableau Bold'>Total Estimated Revenue</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='marketing_campaign_cleaned' name='federated.03rmiph0j05sqo1grw6kl1spralb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03rmiph0j05sqo1grw6kl1spralb'>
+            <column caption='Estimated Revenue_clean' datatype='real' name='[Calculation_4293830413605777418]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT(REPLACE([Estimated_Revenue], &apos;,&apos;, &apos;&apos;))' />
+            </column>
+            <column caption='Channel Used' datatype='string' name='[Channel_Used]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Company]' role='dimension' type='nominal' />
+            <column caption='Customer Segment' datatype='string' name='[Customer_Segment]' role='dimension' type='nominal' />
+            <column caption='Estimated Revenue' datatype='string' hidden='true' name='[Estimated_Revenue]' role='dimension' type='nominal' />
+            <column-instance column='[Channel_Used]' derivation='None' name='[none:Channel_Used:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Company]' derivation='None' name='[none:Company:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Customer_Segment]' derivation='None' name='[none:Customer_Segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_4293830413605777418]' derivation='Sum' name='[sum:Calculation_4293830413605777418:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.03rmiph0j05sqo1grw6kl1spralb].[Action (Channel Used)]'>
+            <groupfilter function='level-members' level='[Channel_Used]' user:ui-action-filter='[Action1_189D63158C194EB099A94C75D3C72EB6]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[Action (Channel Used)]</column>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Channel_Used:nk]</column>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Company:nk]</column>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Customer_Segment:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.03rmiph0j05sqo1grw6kl1spralb].[sum:Calculation_4293830413605777418:qk]' value='c&quot;$&quot;#,##0,,M;-&quot;$&quot;#,##0,,M' />
+            <format attr='font-size' field='[federated.03rmiph0j05sqo1grw6kl1spralb].[sum:Calculation_4293830413605777418:qk]' value='15' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='text-align' data-class='total' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#faf5f0' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Tableau Bold' />
+            <format attr='font-size' value='36' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.03rmiph0j05sqo1grw6kl1spralb].[sum:Calculation_4293830413605777418:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{DD953CC2-5147-474C-A1DE-4256CD1169E4}' />
+    </worksheet>
+    <worksheet name='Monthly Revenue vs. Acquisition Cost Trend'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Tableau Bold'>Monthly Revenue vs. Acquisition Cost Trend</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='marketing_campaign_cleaned' name='federated.03rmiph0j05sqo1grw6kl1spralb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03rmiph0j05sqo1grw6kl1spralb'>
+            <column caption='Acquisition Cost' datatype='string' hidden='true' name='[Acquisition_Cost]' role='dimension' type='nominal' />
+            <column caption='Acquisition Cost_clean' datatype='real' datatype-customized='true' name='[Calculation_4293830413601841153]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT(REPLACE([Acquisition_Cost], &apos;,&apos;, &apos;&apos;))' />
+            </column>
+            <column caption='Estimated Revenue_clean' datatype='real' name='[Calculation_4293830413605777418]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT(REPLACE([Estimated_Revenue], &apos;,&apos;, &apos;&apos;))' />
+            </column>
+            <column caption='Channel Used' datatype='string' name='[Channel_Used]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Company]' role='dimension' type='nominal' />
+            <column caption='Customer Segment' datatype='string' name='[Customer_Segment]' role='dimension' type='nominal' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column caption='Estimated Revenue' datatype='string' hidden='true' name='[Estimated_Revenue]' role='dimension' type='nominal' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Channel_Used]' derivation='None' name='[none:Channel_Used:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Company]' derivation='None' name='[none:Company:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Customer_Segment]' derivation='None' name='[none:Customer_Segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_4293830413601841153]' derivation='Sum' name='[sum:Calculation_4293830413601841153:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_4293830413605777418]' derivation='Sum' name='[sum:Calculation_4293830413605777418:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.03rmiph0j05sqo1grw6kl1spralb].[:Measure Names]'>
+            <groupfilter function='level-members' level='[:Measure Names]' />
+          </filter>
+          <filter class='categorical' column='[federated.03rmiph0j05sqo1grw6kl1spralb].[Action (Channel Used)]'>
+            <groupfilter function='level-members' level='[Channel_Used]' user:ui-action-filter='[Action1_189D63158C194EB099A94C75D3C72EB6]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[:Measure Names]</column>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[Action (Channel Used)]</column>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Channel_Used:nk]</column>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Company:nk]</column>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Customer_Segment:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.03rmiph0j05sqo1grw6kl1spralb].[sum:Calculation_4293830413601841153:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+            <format attr='title' class='0' field='[federated.03rmiph0j05sqo1grw6kl1spralb].[mn:Date:qk]' scope='cols' value='Months' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.03rmiph0j05sqo1grw6kl1spralb].[sum:Calculation_4293830413605777418:qk]' value='c&quot;$&quot;#,##0,,M;-&quot;$&quot;#,##0,,M' />
+            <format attr='text-format' field='[federated.03rmiph0j05sqo1grw6kl1spralb].[sum:Calculation_4293830413601841153:qk]' value='c&quot;$&quot;#,##0,,M;-&quot;$&quot;#,##0,,M' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#faf5f0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.03rmiph0j05sqo1grw6kl1spralb].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.03rmiph0j05sqo1grw6kl1spralb].[sum:Calculation_4293830413605777418:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.03rmiph0j05sqo1grw6kl1spralb].[:Measure Names]' />
+              <text column='[federated.03rmiph0j05sqo1grw6kl1spralb].[sum:Calculation_4293830413605777418:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.03rmiph0j05sqo1grw6kl1spralb].[sum:Calculation_4293830413601841153:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.03rmiph0j05sqo1grw6kl1spralb].[:Measure Names]' />
+              <text column='[federated.03rmiph0j05sqo1grw6kl1spralb].[sum:Calculation_4293830413601841153:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.03rmiph0j05sqo1grw6kl1spralb].[sum:Calculation_4293830413605777418:qk] + [federated.03rmiph0j05sqo1grw6kl1spralb].[sum:Calculation_4293830413601841153:qk])</rows>
+        <cols>[federated.03rmiph0j05sqo1grw6kl1spralb].[mn:Date:qk]</cols>
+      </table>
+      <simple-id uuid='{1E961FA8-3910-4462-B40D-6BBA6D5D7B71}' />
+    </worksheet>
+    <worksheet name='Scatter Plot ROI'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='marketing_campaign_cleaned' name='federated.03rmiph0j05sqo1grw6kl1spralb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03rmiph0j05sqo1grw6kl1spralb'>
+            <column caption='Acquisition Cost' datatype='string' hidden='true' name='[Acquisition_Cost]' role='dimension' type='nominal' />
+            <column caption='Acquisition Cost_clean' datatype='real' datatype-customized='true' name='[Calculation_4293830413601841153]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT(REPLACE([Acquisition_Cost], &apos;,&apos;, &apos;&apos;))' />
+            </column>
+            <column caption='ROI_clean' datatype='real' datatype-customized='true' name='[Calculation_4293830413604466691]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT(REPLACE([ROI], &apos;,&apos;, &apos;&apos;))' />
+            </column>
+            <column caption='Estimated Revenue_clean' datatype='real' name='[Calculation_4293830413605777418]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT(REPLACE([Estimated_Revenue], &apos;,&apos;, &apos;&apos;))' />
+            </column>
+            <column caption='Highlight Top/Bottom ROI' datatype='string' default-role='measure' default-type='quantitative' name='[Calculation_4293830413642252300]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Calculation_4293830413604466691] &gt;= 7.5 OR [Calculation_4293830413604466691] &lt;= 3 THEN [Campaign_ID]END' />
+            </column>
+            <column caption='Campaign ID' datatype='string' name='[Campaign_ID]' role='dimension' type='nominal' />
+            <column caption='Channel Used' datatype='string' name='[Channel_Used]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Company]' role='dimension' type='nominal' />
+            <column caption='Customer Segment' datatype='string' name='[Customer_Segment]' role='dimension' type='nominal' />
+            <column caption='Estimated Revenue' datatype='string' hidden='true' name='[Estimated_Revenue]' role='dimension' type='nominal' />
+            <column datatype='string' hidden='true' name='[ROI]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_4293830413604466691]' derivation='Avg' name='[avg:Calculation_4293830413604466691:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_4293830413642252300]' derivation='Count' name='[cnt:Calculation_4293830413642252300:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Campaign_ID]' derivation='None' name='[none:Campaign_ID:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Channel_Used]' derivation='None' name='[none:Channel_Used:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Company]' derivation='None' name='[none:Company:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Customer_Segment]' derivation='None' name='[none:Customer_Segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_4293830413601841153]' derivation='Sum' name='[sum:Calculation_4293830413601841153:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_4293830413605777418]' derivation='Sum' name='[sum:Calculation_4293830413605777418:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.03rmiph0j05sqo1grw6kl1spralb].[Action (Campaign ID,Channel Used)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action5_566125BDD643473F80B8DA6AEC2D28A4]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Campaign_ID]' />
+              <groupfilter function='level-members' level='[Channel_Used]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.03rmiph0j05sqo1grw6kl1spralb].[Action (Channel Used,Company)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2_F59A322C551B4F82AD2370C6D63B599F]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Channel_Used]' />
+              <groupfilter function='level-members' level='[Company]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.03rmiph0j05sqo1grw6kl1spralb].[Action (Customer Segment)]'>
+            <groupfilter function='level-members' level='[Customer_Segment]' user:ui-action-filter='[Action3_11E48598DA8244AA8A38A2FDE124D5E7]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Campaign_ID:nk]'>
+            <groupfilter function='level-members' level='[none:Campaign_ID:nk]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Campaign_ID:nk]</column>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Channel_Used:nk]</column>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[Action (Channel Used,Company)]</column>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[Action (Customer Segment)]</column>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Company:nk]</column>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Customer_Segment:nk]</column>
+            <column>[federated.03rmiph0j05sqo1grw6kl1spralb].[Action (Campaign ID,Channel Used)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.03rmiph0j05sqo1grw6kl1spralb].[avg:Calculation_4293830413604466691:qk]' value='p0.00%' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.03rmiph0j05sqo1grw6kl1spralb].[avg:Calculation_4293830413604466691:qk]' value='p0.00%' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#faf5f0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.03rmiph0j05sqo1grw6kl1spralb].[avg:Calculation_4293830413604466691:qk]' />
+              <text column='[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Campaign_ID:nk]' />
+              <text column='[federated.03rmiph0j05sqo1grw6kl1spralb].[cnt:Calculation_4293830413642252300:qk]' />
+              <lod column='[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Campaign_ID:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='14' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-mode' value='highlight' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.03rmiph0j05sqo1grw6kl1spralb].[sum:Calculation_4293830413605777418:qk]</rows>
+        <cols>[federated.03rmiph0j05sqo1grw6kl1spralb].[sum:Calculation_4293830413601841153:qk]</cols>
+      </table>
+      <simple-id uuid='{A50086A8-A76E-4864-A4A2-DCD93F4D7224}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='768' maxwidth='1366' minheight='768' minwidth='1366' preset-index='0' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='marketing_campaign_cleaned' name='federated.03rmiph0j05sqo1grw6kl1spralb' />
+      </datasources>
+      <datasource-dependencies datasource='federated.03rmiph0j05sqo1grw6kl1spralb'>
+        <column caption='Channel Used' datatype='string' name='[Channel_Used]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Company]' role='dimension' type='nominal' />
+        <column-instance column='[Channel_Used]' derivation='None' name='[none:Channel_Used:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Company]' derivation='None' name='[none:Company:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97916' id='15' param='horz' type-v2='layout-flow' w='98828' x='586' y='1042'>
+            <zone h='97916' id='13' type-v2='layout-basic' w='87115' x='586' y='1042'>
+              <zone h='19401' id='3' param='horz' type-v2='layout-flow' w='87115' x='586' y='9505'>
+                <zone h='19401' id='5' name='KPI Total Cost' w='17423' x='586' y='9505'>
+                  <layout-cache cell-count-w='1' fixed-size-h='148' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='background-color' value='#eef1f3' />
+                  </zone-style>
+                </zone>
+                <zone h='19401' id='6' name='KPI Total Revenue' w='17423' x='18009' y='9505'>
+                  <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='background-color' value='#eef1f3' />
+                  </zone-style>
+                </zone>
+                <zone h='19401' id='7' name='KPI Total Profit' w='17423' x='35432' y='9505'>
+                  <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='background-color' value='#eef1f3' />
+                  </zone-style>
+                </zone>
+                <zone h='19401' id='8' name='KPI Average ROI' w='17423' x='52855' y='9505'>
+                  <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='background-color' value='#eef1f3' />
+                  </zone-style>
+                </zone>
+                <zone h='19401' id='9' name='KPI Average CR' w='17423' x='70278' y='9505'>
+                  <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='background-color' value='#eef1f3' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone h='8463' id='10' type-v2='text' w='87115' x='586' y='1042'>
+                <formatted-text>
+                  <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='20'>Global Campaign Performance Metrics</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                  <format attr='background-color' value='#f5ead7' />
+                </zone-style>
+              </zone>
+              <zone h='70052' id='11' param='vert' type-v2='layout-flow' w='87115' x='586' y='28906'>
+                <zone fixed-size='268' h='35938' id='12' is-fixed='true' name='Channel Performance: Conversion &amp; ROI' w='87115' x='586' y='28906'>
+                  <layout-cache type-h='cell' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='background-color' value='#faf5f0' />
+                  </zone-style>
+                </zone>
+                <zone h='34114' id='17' name='Monthly Revenue vs. Acquisition Cost Trend' w='87115' x='586' y='64844'>
+                  <layout-cache minheight='198' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='background-color' value='#faf5f0' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='97916' id='14' is-fixed='true' param='vert' type-v2='layout-flow' w='11713' x='87701' y='1042'>
+              <zone h='8464' id='16' name='Channel Performance: Conversion &amp; ROI' pane-specification-id='0' param='[federated.03rmiph0j05sqo1grw6kl1spralb].[avg:Calculation_4293830413604466691:qk]' type-v2='color' w='11713' x='87701' y='1042'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='8594' id='18' name='Monthly Revenue vs. Acquisition Cost Trend' pane-specification-id='1' param='[federated.03rmiph0j05sqo1grw6kl1spralb].[:Measure Names]' type-v2='color' w='11713' x='87701' y='9506'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='21745' id='19' name='Channel Performance: Conversion &amp; ROI' param='[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Company:nk]' show-apply='true' type-v2='filter' values='database' w='11713' x='87701' y='18100'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='24219' id='20' name='Channel Performance: Conversion &amp; ROI' param='[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Channel_Used:nk]' show-apply='true' type-v2='filter' values='database' w='11713' x='87701' y='39845'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='6771' id='21' type-v2='dashboard-object' w='13324' x='71962' y='1823'>
+          <button action='tabdoc:goto-sheet window-id=&quot;{B207F372-FD39-435E-8DF7-18EBA53895E5}&quot;' button-type='text'>
+            <button-visual-state>
+              <caption>Go to Deep Dive Analysis</caption>
+              <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' fontsize='9' />
+              <format attr='background-color' value='#333333' />
+            </button-visual-state>
+          </button>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1700' minheight='1700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='25' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='24' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
+                <zone h='8463' id='10' type-v2='text' w='87115' x='586' y='1042'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='20'>Global Campaign Performance Metrics</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#f5ead7' />
+                  </zone-style>
+                </zone>
+                <zone h='6771' id='21' type-v2='dashboard-object' w='13324' x='71962' y='1823'>
+                  <button action='tabdoc:goto-sheet window-id=&quot;{B207F372-FD39-435E-8DF7-18EBA53895E5}&quot;' button-type='text'>
+                    <button-visual-state>
+                      <caption>Go to Deep Dive Analysis</caption>
+                      <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' fontsize='9' />
+                      <format attr='background-color' value='#333333' />
+                    </button-visual-state>
+                  </button>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='141' h='19401' id='5' is-fixed='true' name='KPI Total Cost' w='17423' x='586' y='9505'>
+                  <layout-cache cell-count-w='1' fixed-size-h='148' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#eef1f3' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='141' h='19401' id='6' is-fixed='true' name='KPI Total Revenue' w='17423' x='18009' y='9505'>
+                  <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#eef1f3' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='141' h='19401' id='7' is-fixed='true' name='KPI Total Profit' w='17423' x='35432' y='9505'>
+                  <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#eef1f3' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='141' h='19401' id='8' is-fixed='true' name='KPI Average ROI' w='17423' x='52855' y='9505'>
+                  <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#eef1f3' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='141' h='19401' id='9' is-fixed='true' name='KPI Average CR' w='17423' x='70278' y='9505'>
+                  <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#eef1f3' />
+                  </zone-style>
+                </zone>
+                <zone h='21745' id='19' mode='checkdropdown' name='Channel Performance: Conversion &amp; ROI' param='[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Company:nk]' show-apply='true' type-v2='filter' values='database' w='11713' x='87701' y='18100'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='24219' id='20' mode='checkdropdown' name='Channel Performance: Conversion &amp; ROI' param='[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Channel_Used:nk]' show-apply='true' type-v2='filter' values='database' w='11713' x='87701' y='39845'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='268' h='35938' id='12' is-fixed='true' name='Channel Performance: Conversion &amp; ROI' w='87115' x='586' y='28906'>
+                  <layout-cache type-h='cell' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#faf5f0' />
+                  </zone-style>
+                </zone>
+                <zone h='8464' id='16' name='Channel Performance: Conversion &amp; ROI' pane-specification-id='0' param='[federated.03rmiph0j05sqo1grw6kl1spralb].[avg:Calculation_4293830413604466691:qk]' type-v2='color' w='11713' x='87701' y='1042'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='254' h='34114' id='17' is-fixed='true' name='Monthly Revenue vs. Acquisition Cost Trend' w='87115' x='586' y='64844'>
+                  <layout-cache minheight='198' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#faf5f0' />
+                  </zone-style>
+                </zone>
+                <zone h='8594' id='18' name='Monthly Revenue vs. Acquisition Cost Trend' pane-specification-id='1' param='[federated.03rmiph0j05sqo1grw6kl1spralb].[:Measure Names]' type-v2='color' w='11713' x='87701' y='9506'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{7F5C56F3-B304-405E-9932-5E190002F8A1}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Tableau Bold' fontsize='20'>Campaign Deep Dive</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='768' maxwidth='1366' minheight='768' minwidth='1366' preset-index='0' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='marketing_campaign_cleaned' name='federated.03rmiph0j05sqo1grw6kl1spralb' />
+      </datasources>
+      <datasource-dependencies datasource='federated.03rmiph0j05sqo1grw6kl1spralb'>
+        <column caption='Channel Used' datatype='string' name='[Channel_Used]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Company]' role='dimension' type='nominal' />
+        <column caption='Customer Segment' datatype='string' name='[Customer_Segment]' role='dimension' type='nominal' />
+        <column-instance column='[Channel_Used]' derivation='None' name='[none:Channel_Used:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Company]' derivation='None' name='[none:Company:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Customer_Segment]' derivation='None' name='[none:Customer_Segment:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97916' id='28' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
+            <zone h='5860' id='29' type-v2='title' w='98828' x='586' y='1042'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+                <format attr='background-color' value='#f5ead7' />
+              </zone-style>
+            </zone>
+            <zone h='92056' id='26' type-v2='layout-basic' w='98828' x='586' y='6902'>
+              <zone h='92056' id='21' param='vert' type-v2='layout-flow' w='87168' x='586' y='6902'>
+                <zone h='92056' id='19' type-v2='layout-basic' w='87168' x='586' y='6902'>
+                  <zone h='46026' id='7' param='horz' type-v2='layout-flow' w='87168' x='586' y='6902'>
+                    <zone h='46026' id='3' param='horz' type-v2='layout-flow' w='87168' x='586' y='6902'>
+                      <zone h='46026' id='5' name='Scatter Plot ROI' w='45999' x='586' y='6902'>
+                        <layout-cache minwidth='166' type-h='fixed' type-w='scalable' />
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                          <format attr='background-color' value='#faf5f0' />
+                        </zone-style>
+                      </zone>
+                      <zone h='46026' id='9' name='CTR vs CPC Analysis' w='41168' x='46585' y='6902'>
+                        <layout-cache minwidth='100' type-h='fixed' type-w='scalable' />
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                          <format attr='background-color' value='#faf5f0' />
+                        </zone-style>
+                      </zone>
+                    </zone>
+                  </zone>
+                  <zone h='46030' id='17' is-fixed='true' type-v2='layout-basic' w='87168' x='586' y='52928'>
+                    <zone h='46030' id='12' param='horz' type-v2='layout-flow' w='45973' x='586' y='52928'>
+                      <zone h='46030' id='13' name='Company Heatmap' w='45973' x='586' y='52928'>
+                        <layout-cache cell-count-w='6' non-cell-size-w='121' type-h='cell' type-w='cell' />
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                          <format attr='background-color' value='#faf5f0' />
+                        </zone-style>
+                      </zone>
+                    </zone>
+                    <zone h='46030' id='18' param='horz' type-v2='layout-flow' w='41195' x='46559' y='52928'>
+                      <zone fixed-size='463' h='46030' id='15' is-fixed='true' name='Customer Segment Profit' w='41195' x='46559' y='52928'>
+                        <layout-cache minheight='204' type-h='scalable' type-w='cell' />
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                          <format attr='background-color' value='#faf5f0' />
+                        </zone-style>
+                      </zone>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+              <zone h='82876' id='23' param='vert' type-v2='layout-flow' w='11660' x='87754' y='16082'>
+                <zone h='6771' id='22' mode='dropdown' name='Company Heatmap' param='[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Channel_Used:nk]' show-apply='true' type-v2='filter' values='database' w='11660' x='87754' y='16082'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='6771' id='30' mode='dropdown' name='Customer Segment Profit' param='[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Customer_Segment:nk]' show-apply='true' type-v2='filter' values='database' w='11660' x='87754' y='22853'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='8464' id='16' name='Customer Segment Profit' pane-specification-id='0' param='[federated.03rmiph0j05sqo1grw6kl1spralb].[sum:Calculation_4293830413605945355:qk]' type-v2='color' w='11660' x='87754' y='29624'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='8464' id='14' name='Company Heatmap' pane-specification-id='0' param='[federated.03rmiph0j05sqo1grw6kl1spralb].[sum:Calculation_4293830413605777418:qk]' type-v2='color' w='11660' x='87754' y='38088'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='19011' id='10' name='CTR vs CPC Analysis' pane-specification-id='0' param='[federated.03rmiph0j05sqo1grw6kl1spralb].[sum:Calculation_4293830413605081093:qk]' type-v2='size' w='11660' x='87754' y='46552'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='8464' id='8' name='Scatter Plot ROI' pane-specification-id='0' param='[federated.03rmiph0j05sqo1grw6kl1spralb].[avg:Calculation_4293830413604466691:qk]' type-v2='color' w='11660' x='87754' y='65563'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='19011' id='24' name='CTR vs CPC Analysis' pane-specification-id='0' param='[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Channel_Used:nk]' type-v2='color' w='11660' x='87754' y='74027'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone h='9180' id='25' mode='dropdown' name='Company Heatmap' param='[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Company:nk]' show-apply='true' type-v2='filter' values='database' w='11660' x='87754' y='6902'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='4297' id='31' type-v2='dashboard-object' w='12006' x='87042' y='1953'>
+          <button action='tabdoc:goto-sheet window-id=&quot;{2464CABB-3214-4239-86A5-F0444597CF35}&quot;' button-type='text'>
+            <button-visual-state>
+              <caption>Back</caption>
+              <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' fontsize='12' />
+              <format attr='background-color' value='#333333' />
+            </button-visual-state>
+          </button>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run fontalignment='1' fontname='Tableau Bold' fontsize='20'>Campaign Deep Dive</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1850' minheight='1850' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='35' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='34' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
+                <zone h='5860' id='29' type-v2='title' w='98828' x='586' y='1042'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#f5ead7' />
+                  </zone-style>
+                </zone>
+                <zone h='4297' id='31' type-v2='dashboard-object' w='12006' x='87042' y='1953'>
+                  <button action='tabdoc:goto-sheet window-id=&quot;{2464CABB-3214-4239-86A5-F0444597CF35}&quot;' button-type='text'>
+                    <button-visual-state>
+                      <caption>Back</caption>
+                      <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' fontsize='12' />
+                      <format attr='background-color' value='#333333' />
+                    </button-visual-state>
+                  </button>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46026' id='5' is-fixed='true' name='Scatter Plot ROI' w='45999' x='586' y='6902'>
+                  <layout-cache minwidth='166' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#faf5f0' />
+                  </zone-style>
+                </zone>
+                <zone h='8464' id='8' name='Scatter Plot ROI' pane-specification-id='0' param='[federated.03rmiph0j05sqo1grw6kl1spralb].[avg:Calculation_4293830413604466691:qk]' type-v2='color' w='11660' x='87754' y='65563'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46026' id='9' is-fixed='true' name='CTR vs CPC Analysis' w='41168' x='46585' y='6902'>
+                  <layout-cache minwidth='100' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#faf5f0' />
+                  </zone-style>
+                </zone>
+                <zone h='19011' id='10' name='CTR vs CPC Analysis' pane-specification-id='0' param='[federated.03rmiph0j05sqo1grw6kl1spralb].[sum:Calculation_4293830413605081093:qk]' type-v2='size' w='11660' x='87754' y='46552'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='19011' id='24' name='CTR vs CPC Analysis' pane-specification-id='0' param='[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Channel_Used:nk]' type-v2='color' w='11660' x='87754' y='74027'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6771' id='22' mode='dropdown' name='Company Heatmap' param='[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Channel_Used:nk]' show-apply='true' type-v2='filter' values='database' w='11660' x='87754' y='16082'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9180' id='25' mode='dropdown' name='Company Heatmap' param='[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Company:nk]' show-apply='true' type-v2='filter' values='database' w='11660' x='87754' y='6902'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46030' id='13' is-fixed='true' name='Company Heatmap' w='45973' x='586' y='52928'>
+                  <layout-cache cell-count-w='6' non-cell-size-w='121' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#faf5f0' />
+                  </zone-style>
+                </zone>
+                <zone h='8464' id='14' name='Company Heatmap' pane-specification-id='0' param='[federated.03rmiph0j05sqo1grw6kl1spralb].[sum:Calculation_4293830413605777418:qk]' type-v2='color' w='11660' x='87754' y='38088'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6771' id='30' mode='dropdown' name='Customer Segment Profit' param='[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Customer_Segment:nk]' show-apply='true' type-v2='filter' values='database' w='11660' x='87754' y='22853'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46030' id='15' is-fixed='true' name='Customer Segment Profit' w='41195' x='46559' y='52928'>
+                  <layout-cache minheight='204' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#faf5f0' />
+                  </zone-style>
+                </zone>
+                <zone h='8464' id='16' name='Customer Segment Profit' pane-specification-id='0' param='[federated.03rmiph0j05sqo1grw6kl1spralb].[sum:Calculation_4293830413605945355:qk]' type-v2='color' w='11660' x='87754' y='29624'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{4BCE4A5B-131B-40FE-9FD6-4E40BC07D3BC}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='KPI Total Cost'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5A8F1E9C-CE0F-4342-A30E-41CCCBC44D1A}' />
+    </window>
+    <window class='worksheet' name='KPI Total Revenue'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B36D324C-3927-4810-B139-4854CFDE7B3F}' />
+    </window>
+    <window class='worksheet' name='KPI Total Profit'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F771D385-EB93-4E5A-B45D-D7C670B9EA18}' />
+    </window>
+    <window class='worksheet' name='KPI Average ROI'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1106EB6F-2A70-48B3-ADF6-892CA8525CF1}' />
+    </window>
+    <window class='worksheet' name='KPI Average CR'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1189C626-355D-4C31-A028-649476EFBD61}' />
+    </window>
+    <window class='worksheet' name='Channel Performance: Conversion &amp; ROI'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.03rmiph0j05sqo1grw6kl1spralb].[avg:Calculation_4293830413604466691:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{6B0A7F10-4E90-432F-BC1A-4B5F41DC65F3}' />
+    </window>
+    <window class='worksheet' name='Monthly Revenue vs. Acquisition Cost Trend'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Company:nk]' type='filter' />
+            <card pane-specification-id='1' param='[federated.03rmiph0j05sqo1grw6kl1spralb].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E5A7C864-3236-458B-8F53-9A516FF40CDB}' />
+    </window>
+    <window class='worksheet' name='Scatter Plot ROI'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.03rmiph0j05sqo1grw6kl1spralb].[avg:Calculation_4293830413604466691:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{2B9A610F-4570-42C6-B0F5-4F16B31E125C}' />
+    </window>
+    <window class='worksheet' name='CTR vs CPC Analysis'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.03rmiph0j05sqo1grw6kl1spralb].[sum:Calculation_4293830413605081093:qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Channel_Used:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6CDC9345-4BF0-46DB-8B72-C3CE64489EDA}' />
+    </window>
+    <window class='worksheet' name='Company Heatmap'>
+      <cards>
+        <edge name='left'>
+          <strip size='207'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.03rmiph0j05sqo1grw6kl1spralb].[none:Company:nk]' show-apply='true' type='filter' />
+            <card pane-specification-id='0' param='[federated.03rmiph0j05sqo1grw6kl1spralb].[sum:Calculation_4293830413605777418:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{921521B1-E421-4E6B-9193-341EDFBFCD91}' />
+    </window>
+    <window class='worksheet' name='Customer Segment Profit'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.03rmiph0j05sqo1grw6kl1spralb].[sum:Calculation_4293830413605945355:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{FDFFAAB2-71F2-4778-AE1E-500D51DD5C14}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Channel Performance: Conversion &amp; ROI'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI Average CR'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI Average ROI'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI Total Cost'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI Total Profit'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI Total Revenue'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Monthly Revenue vs. Acquisition Cost Trend'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{2464CABB-3214-4239-86A5-F0444597CF35}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='CTR vs CPC Analysis'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Company Heatmap'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Customer Segment Profit'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Scatter Plot ROI'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='9' />
+      <simple-id uuid='{B207F372-FD39-435E-8DF7-18EBA53895E5}' />
+    </window>
+  </windows>
+</workbook>
